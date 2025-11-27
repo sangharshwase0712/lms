@@ -1,0 +1,86 @@
+// import {combineReducers, configureStore } from '@reduxjs/toolkit'
+// import authSlice from "./authSlice"
+// import courseSlice from "./courseSlice"
+// import lectureSlice from "./lectureSlice"
+// import {
+//   persistReducer,
+//   FLUSH,
+//   REHYDRATE,
+//   PAUSE,
+//   PERSIST,
+//   PURGE,
+//   REGISTER,
+// } from 'redux-persist'
+// import storage from 'redux-persist/lib/storage'
+
+// const persistConfig = {
+//     key: 'root',
+//     version: 1,
+//     storage,
+//   }
+
+//   const rootReducer = combineReducers({
+//     auth:authSlice,
+//     course:courseSlice,
+//     lecture:lectureSlice
+//   })
+
+//   const persistedReducer = persistReducer(persistConfig, rootReducer)
+
+//   const store = configureStore({
+//     reducer: persistedReducer,
+//     middleware: (getDefaultMiddleware) =>
+//       getDefaultMiddleware({
+//         serializableCheck: {
+//           ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+//         },
+//       }),
+//   })
+
+// export default store;
+
+
+import { combineReducers, configureStore } from '@reduxjs/toolkit'
+import authSlice from "./authSlice"
+import courseSlice from "./courseSlice"
+import lectureSlice from "./lectureSlice"
+
+import {
+  persistReducer,
+  FLUSH,
+  REHYDRATE,
+  PAUSE,
+  PERSIST,
+  PURGE,
+  REGISTER,
+} from 'redux-persist'
+
+import storage from 'redux-persist/lib/storage'
+
+// 🛑 IMPORTANT: course ko persist mat karo (TAKI null recover na ho)
+const persistConfig = {
+  key: 'root',
+  version: 1,
+  storage,
+  blacklist: ['course']   // ⭐ course NOT persisted now
+}
+
+const rootReducer = combineReducers({
+  auth: authSlice,
+  course: courseSlice,
+  lecture: lectureSlice,
+})
+
+const persistedReducer = persistReducer(persistConfig, rootReducer)
+
+const store = configureStore({
+  reducer: persistedReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: {
+        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+      },
+    }),
+})
+
+export default store

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Label } from "@radix-ui/react-label.jsx";
+import { Label } from "@radix-ui/react-label";
 import { Input } from "@/Components/ui/input.jsx";
 import { RadioGroup, RadioGroupItem } from "@/Components/ui/radio-group.jsx";
 import { Button } from "@/Components/ui/button.jsx";

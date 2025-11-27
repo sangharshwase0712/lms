@@ -14,7 +14,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog"
+} from "@/Components/ui/dialog"
 import { Label } from "@radix-ui/react-label";
 import { Input } from "@/Components/ui/input";
 import { toast } from "sonner";

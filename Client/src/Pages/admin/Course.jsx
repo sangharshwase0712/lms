@@ -8,7 +8,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
+} from "@/components/ui/table.jsx";
 import { Button } from "@/Components/ui/button";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";

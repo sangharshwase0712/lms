@@ -56,7 +56,7 @@ function Profile() {
     }
     try{
       setLoading(true);
-      const res = await axios.put('http://localhost:8080/api/users/profile/update', formData, {
+      const res = await axios.put('https://lms-8-phxm.onrender.com/users/profile/update', formData, {
         withCredentials:true,
         headers:{
           'Content-Type':'multipart/form-data'

@@ -70,7 +70,7 @@ function Course() {
   useEffect(()=>{
     const getCreateCourse = async ()=>{
       try{
-        const res = await axios.get('http://localhost:8080/api/course/', {withCredentials:true})
+        const res = await axios.get('https://lms-8-phxm.onrender.com/course/', {withCredentials:true})
         if(res.data.success){
           dispatch(setCourse(res.data.courses))
       }

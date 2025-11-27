@@ -18,7 +18,7 @@ const CourseDetails = () => {
     useEffect(()=> {
         const getCourseLecture = async()=> {
             try {
-                const res = await axios.get(`http://localhost:8080/api/course/${courseId}/lecture`,{withCredentials:true})
+                const res = await axios.get(`https://lms-8-phxm.onrender.com/course/${courseId}/lecture`,{withCredentials:true})
 
                 if(res.data.success){
                     setCourseLecture(res.data.lectures)

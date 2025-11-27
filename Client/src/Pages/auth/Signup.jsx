@@ -34,7 +34,7 @@ const Signup = () => {
     console.log(user);
    
    try{
-    const response = await axios.post('http://localhost:8080/api/users/register', user , {
+    const response = await axios.post('https://lms-8-phxm.onrender.com/users/register', user , {
      
       headers:{
         'Content-Type': 'application/json',

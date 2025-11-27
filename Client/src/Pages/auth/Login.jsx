@@ -30,7 +30,7 @@ const Login = () => {
     e.preventDefault();
     console.log(input);
        try{
-    const response = await axios.post('http://localhost:8080/api/users/login', input , {
+    const response = await axios.post('https://lms-8-phxm.onrender.com/users/login', input , {
      
       headers:{
         'Content-Type': 'application/json',

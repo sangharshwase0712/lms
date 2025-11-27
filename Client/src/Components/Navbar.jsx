@@ -65,7 +65,7 @@ function Navbar() {
 
   const handleLogout = async() => {
 try{
-  const res = await axios.get('http://localhost:8080/api/users/logout', {withCredentials:true})
+  const res = await axios.get('https://lms-8-phxm.onrender.com/users/logout', {withCredentials:true})
   if(res.data.success){
     navigate('/');
     dispatch(setUser(null));

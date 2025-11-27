@@ -31,7 +31,7 @@ function CreateCourse() {
   const handleCreateCourse = async () => {
     try{
     setLoading(true);
-const res = await axios.post('http://localhost:8080/api/course/', {courseTitle, category},{
+const res = await axios.post('https://lms-8-phxm.onrender.com/course/', {courseTitle, category},{
   headers:{
     'Content-Type':'application/json'
   },

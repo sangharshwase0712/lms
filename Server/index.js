@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 app.use(cors({
-  origin: 'http://localhost:5173', // Adjust based on your client URL
+  origin: 'https://lms-8-phxm.onrender.com', // Adjust based on your client URL
   credentials: true,
 }));
 

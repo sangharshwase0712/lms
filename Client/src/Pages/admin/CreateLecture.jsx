@@ -21,7 +21,7 @@ function CreateLecture() {
     const createLectureHandler = async ()=>{
         try {
             setLoading(true)
-            const res = await axios.post(`http://localhost:8080/api/course/${params?.courseId}/lecture`,{lectureTitle},{
+            const res = await axios.post(`https://lms-8-phxm.onrender.com/course/${params?.courseId}/lecture`,{lectureTitle},{
                 headers:{
                     "Content-Type": "application/json"
                 },
@@ -42,7 +42,7 @@ function CreateLecture() {
     useEffect(()=>{
         const getLectures = async()=>{
       try {
-        const res = await axios.get(`http://localhost:8080/api/course/${params.courseId}/lecture`,
+        const res = await axios.get(`https://lms-8-phxm.onrender.com/course/${params.courseId}/lecture`,
             {withCredentials:true})
             if(res.data.success){
                 dispatch(setLecture(res.data.lectures))

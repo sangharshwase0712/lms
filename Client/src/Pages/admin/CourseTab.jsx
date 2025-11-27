@@ -41,7 +41,7 @@ function CourseTab() {
 
     const getCourseById = async () => {
       try{
-        const res = await axios.get(`http://localhost:8080/api/course/${id}`, {withCredentials:true})
+        const res = await axios.get(`https://lms-8-phxm.onrender.com/course/${id}`, {withCredentials:true})
         if(res.data.success){
           setSelectedCourse(res.data.course)
         } 
@@ -103,7 +103,7 @@ function CourseTab() {
 
       try{
         setLoading(true)
-        const res = await axios.put(`http://localhost:8080/api/course/${id}`, formData,{
+        const res = await axios.put(`https://lms-8-phxm.onrender.com/course/${id}`, formData,{
           headers:{
             "Content-Type":"multipart/form-data"
           },
@@ -125,7 +125,7 @@ function CourseTab() {
 
     const togglePublishUnpublish = async(action) => {
       try {
-        const res = await axios.patch(`http://localhost:8080/api/course/${id}`, {
+        const res = await axios.patch(`https://lms-8-phxm.onrender.com/course/${id}`, {
           params: {
             action
           },

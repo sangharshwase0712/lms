@@ -76,7 +76,7 @@ const {course} = useSelector(store => store.course)
   useEffect(()=>{
     const getAllPublishedCourse = async ()=>{
       try {
-        const res = await axios.get(`http://localhost:8080/api/course/published-courses`, {withCredentials:true})
+        const res = await axios.get(`https://lms-8-phxm.onrender.com/course/published-courses`, {withCredentials:true})
         if(res.data.success){
            dispatch(setCourse(res.data.courses))
         }

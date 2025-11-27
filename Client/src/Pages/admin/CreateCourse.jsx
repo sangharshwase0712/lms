@@ -1,5 +1,5 @@
-import { Input } from '@/Components/ui/input'
-import { Label } from '@/Components/ui/label'
+import { Input } from '@/Components/ui/input.jsx'
+import { Label } from '@/Components/ui/label.jsx'
 // import { Select } from '@/Components/ui/select'
 import React from 'react'
 import { useState } from 'react'  
@@ -11,8 +11,8 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
-import { Button } from '@/Components/ui/button'
+} from "@/components/ui/select.jsx"
+import { Button } from '@/Components/ui/button.jsx'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { toast } from 'sonner'

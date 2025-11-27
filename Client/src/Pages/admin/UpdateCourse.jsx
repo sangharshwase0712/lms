@@ -1,4 +1,4 @@
-import { Button } from '@/Components/ui/button'
+import { Button } from '@/Components/ui/button.jsx'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import CourseTab from './CourseTab'

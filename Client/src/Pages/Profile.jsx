@@ -1,6 +1,6 @@
 import React from "react";
 import UserLogo from "../assets/Hero.png";
-import { Button } from "@/Components/ui/button";
+import { Button } from "@/Components/ui/button.jsx";
 import { useSelector } from "react-redux";
 import { useState } from "react";
 import axios from "axios";

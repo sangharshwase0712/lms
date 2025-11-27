@@ -1,6 +1,6 @@
-import { Button } from "@/Components/ui/button";
-import { Input } from "@/Components/ui/input";
-import { Label } from "@/Components/ui/label";
+import { Button } from "@/Components/ui/button.jsx";
+import { Input } from "@/Components/ui/input.jsx";
+import { Label } from "@/Components/ui/label.jsx";
 import React, { useEffect, useState } from "react";
 import axios from "axios"
 import { toast } from "sonner";

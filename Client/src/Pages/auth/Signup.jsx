@@ -1,8 +1,8 @@
-import { Label } from "@radix-ui/react-label";
-import { Input } from "@/Components/ui/input";
+import { Label } from "@radix-ui/react-label.jsx";
+import { Input } from "@/Components/ui/input.jsx";
 import React from "react";
-import { RadioGroup, RadioGroupItem } from "@/Components/ui/radio-group";
-import { Button } from "@/Components/ui/button";
+import { RadioGroup, RadioGroupItem } from "@/Components/ui/radio-group.jsx";
+import { Button } from "@/Components/ui/button.jsx";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { toast } from "sonner";

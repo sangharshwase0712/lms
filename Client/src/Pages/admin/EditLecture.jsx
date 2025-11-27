@@ -1,4 +1,4 @@
-import { Button } from '@/Components/ui/button'
+import { Button } from '@/Components/ui/button.jsx'
 import { ArrowLeft } from 'lucide-react'
 import React from 'react'
 import { Link, useParams  } from 'react-router-dom'

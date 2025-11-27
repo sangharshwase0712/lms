@@ -9,12 +9,12 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table.jsx";
-import { Button } from "@/Components/ui/button";
+import { Button } from "@/Components/ui/button.jsx";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { setCourse } from "@/redux/courseSlice";
-import { Badge } from "@/Components/ui/badge";
+import { Badge } from "@/Components/ui/badge.jsx";
 import { Edit } from "lucide-react";
 
 

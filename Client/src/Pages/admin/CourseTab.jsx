@@ -1,14 +1,14 @@
 import RichTextEditor from "@/Components/RichTextEditor";
-import { Button } from "@/Components/ui/button";
+import { Button } from "@/Components/ui/button.jsx";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/Components/ui/card";
-import { Input } from "@/Components/ui/input";
-import { Label } from "@/Components/ui/label";
+} from "@/Components/ui/card.jsx";
+import { Input } from "@/Components/ui/input.jsx";
+import { Label } from "@/Components/ui/label.jsx";
 import {
   Select,
   SelectContent,
@@ -17,7 +17,7 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "@/components/ui/select.jsx";
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";

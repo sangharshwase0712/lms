@@ -1,4 +1,4 @@
-import { Label } from "@radix-ui/react-label.jsx";
+import { Label } from "@radix-ui/react-label";
 import { Input } from "@/Components/ui/input.jsx";
 import React from "react";
 import { RadioGroup, RadioGroupItem } from "@/Components/ui/radio-group.jsx";
